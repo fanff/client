@@ -1,0 +1,12 @@
+
+
+version: '2'
+
+services:
+
+    client: 
+        build: . 
+        command: /bin/bash
+
+        volumes:
+            - .:/go
