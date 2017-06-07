@@ -214,7 +214,7 @@ func CheckReceipt(txhash string) (int8, error) {
     return 0, nil
   }
   _tx, _ := client.Eth_getTransactionByHash(txhash)
-  gasSent := uint64(_tx.Gas)
+  gasSent, _ := strconv.ParseUint(_tx.Gas, 0, 64)
   gasUsed, _ := strconv.ParseUint(_gasUsed, 0, 64)
   if gasUsed >= gasSent {
     return -1, nil
