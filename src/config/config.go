@@ -7,7 +7,7 @@ import (
   "log"
   "sig"
 )
-import "fmt"
+// import "fmt"
 
 type Config struct {
   API string                    // Host of the Grid+ API

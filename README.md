@@ -63,6 +63,22 @@ You can now run the client with:
 bash run.sh
 ```
 
+## Using docker and docker-compose
+
+Generate the setup key with:
+
+```
+docker-compose run client /bin/bash install.sh 
+```
+
+This will setup all in your local folder, but run all in a docker container. Docker-compose is used here for ease of deployment.
+
+
+Then run the client with:
+
+```
+docker-compose up
+```
 
 ### Troubleshooting
 Here are some common issues and solutions. Note that errors are, by default, logged to `src/agent.log`.

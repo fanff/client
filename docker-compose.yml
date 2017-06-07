@@ -6,7 +6,7 @@ services:
 
     client: 
         build: . 
-        command: /bin/bash
+        command: /bin/bash run.sh
 
         volumes:
             - .:/go
